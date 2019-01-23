@@ -25,7 +25,7 @@ my $query = BioMart::Query->new('registry'=>$registry,'virtualSchemaName'=>'defa
 	$query->addAttribute("ensembl_gene_id");
 	$query->addAttribute("ensembl_transcript_id");
 	$query->addAttribute("transcript_biotype");
-	$query->addAttribute("transcript_tsl");
+	$query->addAttribute("transcript_gencode_basic");
 	$query->addAttribute("ccds");
 	$query->addAttribute("hgnc_id");
 	$query->addAttribute("transcript_start");

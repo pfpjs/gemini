@@ -6,7 +6,7 @@ set -euo pipefail
 git clone --branch cvs/release-0_7 https://github.com/biomart/biomart-perl
 
 # get Ensembl biomart registry
-wget -O ensembl_biomart.xml https://www.ensembl.org/biomart/martservice?type=registry
+wget -O ensembl_biomart.xml https://grch37.ensembl.org/biomart/martservice?type=registry
 
 # get Ensembl version from the downloaded registry xml
 ENSEMBLVERSION=`cat ensembl_biomart.xml | grep ensembl_mart | perl -pe 's/.*ensembl_mart_(\d+).*/$1/'`
